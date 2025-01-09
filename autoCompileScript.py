@@ -8,7 +8,7 @@ ewpFilePath = r'C:\test\application.ewp'                                    # IA
 IarBuildPath = r'D:\IAR\common\bin\IarBuild.exe'                            # IAR根目录下的IarBuild.exe路径
 outputFileSrcPath = 'C:\\test\\Release\\Exe\\rugby_hp_cs01_app.bin'         # IAR编译输出位置\\文件名
 outputFileDesPath = 'C:\\test\\Release\\Exe\\'                              # IAR编译输出位置
-IAR_dict = {'H77B_83213A_亮度60%': 0xCCCC, 'H77B_83213A_亮度50%': 0x7FFF}    # 输出文件名:修改数值 键值对字典
+IAR_dict = {'亮度60%': 0x9999, '亮度50%': 0x7FFF}                            # 输出文件名:修改数值 键值对字典，可以添加多对
 pattern1 = r'#define DEFAULT_LIGHT_LV\s+\((0x[0-9A-Fa-f]+)\)'               # 代码中待修改位置的正则匹配式，若需修改多处则继续添加pattern并新增sub语句
 
 compileFileNum = 0
